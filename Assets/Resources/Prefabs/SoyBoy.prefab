@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114750056246593808}
   m_Layer: 8
   m_Name: SoyBoy
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1139615680506332}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.48, y: -3.55, z: 0}
+  m_LocalPosition: {x: -6.74, y: -3.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -114,6 +114,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 14
   accel: 6
+  isJumping: 0
+  jumpSpeed: 8
+  jumpDurationThreshold: 0.25
+  airAccel: 3
+  jump: 14
 --- !u!212 &212712729426860140
 SpriteRenderer:
   m_ObjectHideFlags: 1
