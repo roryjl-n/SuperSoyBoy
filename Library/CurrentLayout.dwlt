@@ -628,7 +628,7 @@ MonoBehaviour:
     height: 910
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ce060000
+    m_SelectedIDs: 
     m_LastClickedID: 0
     m_ExpandedIDs: 1efcffff00000000
     m_RenameOverlay:
@@ -691,18 +691,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Resources/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Resources/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\GAME 312 - Game Engines II\Lab3 - SuperSoyBoy
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1c260000
-    m_LastClickedID: 9756
+    m_SelectedIDs: fa260000
+    m_LastClickedID: 9978
     m_ExpandedIDs: 000000000c260000bc26000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
