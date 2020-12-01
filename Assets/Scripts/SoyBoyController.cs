@@ -8,6 +8,11 @@ using UnityEngine;
 
 public class SoyBoyController : MonoBehaviour 
 {
+	public AudioClip runClip;
+	public AudioClip jumpClip;
+	public AudioClip slideClip;
+	private AudioSource audioSource;
+
 	// pre-defined values to use when calculating how much force to apply to Super Soy Boy’s Rigidbody.
 	public float speed = 14f;
 	public float accel = 6f;
@@ -44,6 +49,8 @@ public class SoyBoyController : MonoBehaviour
 		sprite, rather than inside the sprite bounds. */
 		width = GetComponent<Collider2D>().bounds.extents.x + 0.1f;
 		height = GetComponent<Collider2D>().bounds.extents.y + 0.2f;
+
+		audioSource = GetComponent<AudioSource>();
 	}
 
 	void FixedUpdate()
@@ -99,6 +106,7 @@ public class SoyBoyController : MonoBehaviour
 			* 0.75f, rb.velocity.y);
 			animator.SetBool("IsOnWall", false);
 			animator.SetBool("IsJumping", true);
+			PlayAudioClip(jumpClip);
 		}
 		else if (!IsWallToLeftOrRight())
 		{
@@ -108,6 +116,7 @@ public class SoyBoyController : MonoBehaviour
 		if (IsWallToLeftOrRight() && !PlayerIsOnGround())
 		{
 			animator.SetBool("IsOnWall", true);
+			PlayAudioClip(slideClip);
 		}
 		// This gives Super Soy Boy’s Rigidbody a new velocity if the user has pressed the jump button for less than the jumpDurationThreshold. 
 		//  The velocity given in the X direction is the same as his current sideways movement speed but his velocity given in the Y
@@ -118,7 +127,16 @@ public class SoyBoyController : MonoBehaviour
 		}
 	}
 
-		// Use this for initialization
+	// This checks that the audioSource and clip to be played are valid, and also ensures the Audio Source component is not already playing a clip before playing the new clip.
+	void PlayAudioClip(AudioClip clip)
+	{
+		if (audioSource != null && clip != null)
+		{
+			if (!audioSource.isPlaying) audioSource.PlayOneShot(clip);
+		}
+	}
+
+	// Use this for initialization
 	void Start () 
 	{
 		
@@ -252,14 +270,19 @@ public class SoyBoyController : MonoBehaviour
 
 		// This code calls the PlayerIsOnGround() method to determine if the player is touching the ground or not (true or false). 
 		// It also checks if the player is not already jumping.
-		if (PlayerIsOnGround() && isJumping == false)
+		// One PlayAudioClip() method plays the jumpClip and one plays the runClip.
+		if (PlayerIsOnGround() && !isJumping)
 		{
 			if (input.y > 0f)
 			{
 				isJumping = true;
+				PlayAudioClip(jumpClip);
 			}
-
 			animator.SetBool("IsOnWall", false);
+			if (input.x < 0f || input.x > 0f)
+			{
+				PlayAudioClip(runClip);
+			}
 		}
 
 		// This checks for jumpDuration being longer than the jumpDurationThreshold (0.25 seconds).
