@@ -33,6 +33,9 @@ public class Hazard : MonoBehaviour
 			spriteRenderer.sprite = hitSprite;
 			// 4 Lastly, destroy the colliding object (the player).
 			Destroy(coll.gameObject);
+			//This will call the GameManager instance’s RestartLevel() method, passing in a delay of 1.25 seconds. 
+			// This will run the coroutine and restart the level after a 1.25 second delay when called, giving just enough time for the player to see the death particle effect.
+			GameManager.instance.RestartLevel(1.25f);
 		}
 	}
 

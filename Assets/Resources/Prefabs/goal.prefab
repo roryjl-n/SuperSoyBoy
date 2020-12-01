@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4117054933923436}
   - component: {fileID: 212995118180504096}
+  - component: {fileID: 114563316953512630}
   m_Layer: 0
   m_Name: goal
   m_TagString: Untagged
@@ -40,6 +41,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114563316953512630
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1852162521063348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c37a8b260c9e2ca469913c01a86f24a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goalClip: {fileID: 8300000, guid: 236f4bd026e2c3a4dbd496505a4cec05, type: 3}
 --- !u!212 &212995118180504096
 SpriteRenderer:
   m_ObjectHideFlags: 1
