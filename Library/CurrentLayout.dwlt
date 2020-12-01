@@ -155,8 +155,8 @@ MonoBehaviour:
     y: 30
     width: 1904
     height: 931
-  m_MinSize: {x: 709, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 713, y: 492}
+  m_MaxSize: {x: 18008, y: 14042}
   vertical: 1
   controlID: 23
 --- !u!114 &8
@@ -180,8 +180,8 @@ MonoBehaviour:
     y: 0
     width: 1904
     height: 931
-  m_MinSize: {x: 709, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 713, y: 492}
+  m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
   controlID: 24
 --- !u!114 &9
@@ -212,7 +212,7 @@ MonoBehaviour:
   - {fileID: 16}
   - {fileID: 14}
   m_Selected: 0
-  m_LastSelected: 2
+  m_LastSelected: 3
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -231,8 +231,8 @@ MonoBehaviour:
     y: 0
     width: 241
     height: 931
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -482,9 +482,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.73396957, y: -0.7945491, z: 0}
+    m_Target: {x: -6.2116365, y: -2.5418015, z: 0}
     speed: 2
-    m_Value: {x: 0.73396957, y: -0.7945491, z: 0}
+    m_Value: {x: -6.2116365, y: -2.5418015, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -511,9 +511,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 8.4197235
+    m_Target: 8.793525
     speed: 2
-    m_Value: 8.4197235
+    m_Value: 8.793525
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -628,8 +628,8 @@ MonoBehaviour:
     height: 910
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3094feff
-    m_LastClickedID: 0
+    m_SelectedIDs: 08fcffff
+    m_LastClickedID: -1016
     m_ExpandedIDs: 1efcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -691,19 +691,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Resources/Prefabs
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resources/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\GAME 312 - Game Engines II\Lab3 - SuperSoyBoy
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7e280000
-    m_LastClickedID: 10366
-    m_ExpandedIDs: 000000000a2600007828000000ca9a3bffffff7f
+    m_SelectedIDs: 16260000
+    m_LastClickedID: 9750
+    m_ExpandedIDs: 000000000a260000b026000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -731,7 +731,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000a260000
+    m_ExpandedIDs: 000000000a260000b0260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
