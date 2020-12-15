@@ -18,6 +18,14 @@ public class Goal : MonoBehaviour
 				audioSource.PlayOneShot(goalClip);
 			}
 			GameManager.instance.RestartLevel(0.5f);
+
+			/* 1 FindObjectOfType finds the timer script component instance in the level scene. The
+			generic type Timer is indicated here. This Unity method finds the first instance of a
+			script of type Timer. As there is only one Timer script per level, which is used to
+			track level time, this instance is returned. */
+			var timer = FindObjectOfType<Timer>();
+			// 2 The new SaveTime method you created is called on the GameManager singleton, passing in the current level runtime from the Timer script.
+			GameManager.instance.SaveTime(timer.time);
 		}
 	}
 

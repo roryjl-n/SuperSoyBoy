@@ -9,17 +9,20 @@ public class Timer : MonoBehaviour
 	GameObject the script exists on. In the Update() loop, the text will be changed to
 	display the time since the level last reloaded, rounded to two decimal places.*/
 
-    private Text timerText;
+	public decimal time;
+
+	private Text timerText;
 
 	void Awake()
 	{
 		timerText = GetComponent<Text>();
 	}
 
+	// By storing the game time in the new time variable before updating the timerText value, you’re giving other scripts the ability to access the time value.
 	void Update()
 	{
-		timerText.text =
-		System.Math.Round((decimal)Time.timeSinceLevelLoad,
-		2).ToString();
+		time = System.Math.Round((decimal)Time.timeSinceLevelLoad, 2);
+		timerText.text = time.ToString();
+
 	}
 }
