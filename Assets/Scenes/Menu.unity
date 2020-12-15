@@ -1236,6 +1236,7 @@ GameObject:
   - component: {fileID: 1934362232}
   - component: {fileID: 1934362231}
   - component: {fileID: 1934362230}
+  - component: {fileID: 1934362233}
   m_Layer: 5
   m_Name: NameInputField
   m_TagString: Untagged
@@ -1359,6 +1360,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1934362228}
+--- !u!114 &1934362233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1934362228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70dab5215b28f434392f6c4753a92bda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1966748110
 GameObject:
   m_ObjectHideFlags: 0
@@ -1480,6 +1492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccce196337a015d42b7a079afe2530df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerName: 
 --- !u!4 &2130246526
 Transform:
   m_ObjectHideFlags: 0

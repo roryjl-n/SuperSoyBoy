@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour 
 {
+	public string playerName;
+
 	//static field that will hold the instance reference for the GameManager singleton
 	public static GameManager instance;
 
