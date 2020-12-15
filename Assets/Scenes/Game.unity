@@ -23579,8 +23579,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1d01dff7a4f7fc4abf0c7bbb703965e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraTrackTarget: 
   camTarget: {fileID: 407311631}
   trackingSpeed: 90
+  cameraZDepth: 0
   minX: -200
   minY: -200
   maxX: 200
@@ -24876,7 +24878,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1459650082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4395803, y: 0.08821582, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 803578310}
@@ -25513,7 +25515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 608e7993acabed14d90f21c3e04e5b46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: 
+  levelName: mi nivel super perron
 --- !u!1001 &1463333547
 Prefab:
   m_ObjectHideFlags: 0

@@ -5,8 +5,10 @@ using UnityEngine;
 public class CameraLerpToTransform : MonoBehaviour
 {
 	// 1 the target the camera will track, tracking, speed and the camera’s bounds.
+	public string cameraTrackTarget;
 	public Transform camTarget;
 	public float trackingSpeed;
+	public float cameraZDepth;
 	public float minX;
 	public float minY;
 	public float maxX;
